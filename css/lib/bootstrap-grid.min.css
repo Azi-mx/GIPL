@@ -6266,8 +6266,7 @@ fieldset:disabled .btn {
 }
 
 .modal-backdrop {
-    --bs-backdrop-zindex: 1050;
-    --bs-backdrop-bg: #000;
+    --bs-backdrop-zindex: 999;
     --bs-backdrop-opacity: 0.5;
     position: fixed;
     top: 0;
@@ -6275,7 +6274,6 @@ fieldset:disabled .btn {
     z-index: var(--bs-backdrop-zindex);
     width: 100vw;
     height: 100vh;
-    background-color: var(--bs-backdrop-bg)
 }
 
 .modal-backdrop.fade {
@@ -6307,6 +6305,8 @@ fieldset:disabled .btn {
 }
 
 .modal-body {
+    display: flex;
+    justify-content: center;
     position: relative;
     flex: 1 1 auto;
     padding: var(--bs-modal-padding)
@@ -6335,11 +6335,7 @@ fieldset:disabled .btn {
         --bs-modal-box-shadow: var(--bs-box-shadow)
     }
 
-    .modal-dialog {
-        max-width: var(--bs-modal-width);
-        margin-right: auto;
-        margin-left: auto
-    }
+    .modal-dialog {}
 
     .modal-sm {
         --bs-modal-width: 300px
