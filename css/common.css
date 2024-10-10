@@ -1251,9 +1251,6 @@ ul li {
   position: relative;
 }
 
-.section-youtube .playlist-card .thumb-img {
-  margin-bottom: 2rem;
-}
 
 .section-youtube .playlist-card .thumb-img iframe {
   width: 100%;
