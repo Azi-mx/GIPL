@@ -1,0 +1,95 @@
+.footer {
+     background-color: $monochome4;
+     font-family: $ff-inter;
+     padding: 8rem 0;
+
+     &-top {
+          border-bottom: 1px solid #e1e4ea;
+          margin-bottom: 5rem;
+          padding-bottom: 5rem;
+          position: relative;
+
+          ul {
+               display: flex;
+
+               li {
+                    a {
+                         color: $monochome5;
+                         font-size: 2rem;
+
+                         &:hover {
+                              color: $primary-color0;
+                         }
+                    }
+
+                    &+li {
+                         margin-left: 4rem;
+                    }
+               }
+          }
+     }
+
+     &-main{
+          .about{
+               address{
+                    margin: 5rem 0 3.5rem;
+                    padding: 0;
+
+                    p{
+                         color: $monochome5;
+                         font-size: 2rem;
+                    }
+               }
+
+               .social-media{
+                    margin: 0 -1.5rem;
+                    padding-right: 1.3rem;
+                    a{
+                         display: inline-block;
+                         height: 4rem;
+                         margin: 1.5rem;
+                         width: 4rem;
+                    }
+               }
+          }
+
+          .quick-link{
+               h4{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin-bottom: 3rem;
+               }
+
+               ul{
+                    li{
+                         a{
+                              color: $monochome5;
+                              font-size: 2rem;
+                              line-height: 2.4rem;
+
+                              &:hover{
+                                   color: $primary-color0;
+                              }
+                         }
+
+                         & + li{
+                              margin-top: 2.5rem;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width:991px){
+     .footer{
+          .col-12 {
+                margin: 2rem 0;
+          }
+
+          &-top{
+               display: none
+          }
+     }
+}

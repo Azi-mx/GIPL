@@ -1,0 +1,98 @@
+.btn2 {
+     @include btn2-common;
+
+     &-large {
+          line-height: 4.5rem;
+          padding: 0 2.5rem;
+     }
+
+     &-primary {
+          
+          background-color: $primary-color0;
+          color: $monochome1;
+
+          &:hover{
+               span {
+                    transform: translateY(0) scale(2);
+               }
+          }
+
+     }
+
+     &-primary-white {
+          background-color: $monochome1;
+          color: $monochome;
+
+          &:hover {
+               color: $monochome1;
+               span {
+                    transform: translateY(0) scale(2);
+               }
+          }
+
+     }
+
+     &-primary1 {
+          background-color: $primary-color1;
+          color: $monochome1;
+
+          &:hover {
+               background-color: $primary-color0;
+          }
+     }
+
+     &-secondary {
+          background-color: $monochome1;
+          color: $monochome;
+
+          &:hover {
+               background-color: $primary-color1;
+               color: $monochome1;
+          }
+     }
+
+     &-outline {
+          box-shadow: inset 0 0 0 1px $monochome1;
+          background-color: transparent;
+          color: $monochome1;
+
+          &:hover {
+               background-color: $monochome1;
+               color: $monochome1;
+
+               span {
+                    transform: translateY(0);
+                    transform: translateY(0) scale(2);
+               }
+          }
+     }
+
+     
+
+     &-group {
+          align-items: center;
+          display: flex;
+
+          .btn2 {
+               &+.btn2 {
+                    margin-left: 2rem;
+               }
+          }
+     }
+
+     .ic{
+          margin-right: 1rem;
+     }
+}
+
+.ic-broacher{
+     padding-left: 7.4rem;
+     &::after{
+          @include before-after;
+          background: url(#{$asset-path}/icons/ic-broacher.svg);
+          background-size: 100%;
+          height: 2.4rem;
+          left: 4rem;
+          width: 2.4rem;
+     }
+}

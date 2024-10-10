@@ -1,0 +1,661 @@
+@import '../scss/helper/variable';
+@import '../scss/helper/mixin';
+
+
+
+.section {
+
+     &-hero{
+          padding: 12rem 0 0;
+          .text{
+
+               small{
+                    color: $secondary-color;
+                    font-family: $ff-roboto;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 2.2rem;
+                    margin-bottom: 1.5rem;
+                    display: inline-block;
+               }
+
+               .h{
+                    color: $monochome2;
+                    font-size: 6rem;
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+
+                    span{
+                         color: $primary-color0;
+                    }
+               }
+
+               p{
+                    color: #141D3899;
+                    font-size: 1.8rem;
+                    line-height: 3.6rem;
+               }
+
+               .btn{
+                    &-grp{
+                         margin-top: 3rem
+                    }
+                    @include btn-com;
+                    min-width: 16rem;
+                    justify-content: center;
+
+                    span{
+                         & + span{
+                              margin-left: .8rem;
+                              position: relative;
+                              top: -1px;
+                         }
+                    }
+
+                    & + .btn{
+                         margin-left: 2rem;
+                    }
+
+                    &-solid{
+                         @include solid-btn;
+                    }
+               }
+
+               .watch-story{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 35px;
+
+                    img{
+                         margin-right: 20px;
+                    }
+
+                    span{
+                         color: #141D38;
+                         font-weight: 500;
+                         font-family: $ff-roboto;
+                         font-size: 20px;
+                         small{
+                              color: #141D38;
+                              font-size: 1.4rem;
+                              font-weight: 400;
+                              display: block;
+                              margin: 0;
+                         }
+                    }
+               }
+          }
+          .right{
+               .img-box{
+                    display: flex;
+                    position: relative;
+                    img{
+                         max-width: 100%;
+                         margin: auto;
+                    }
+                    .rotate{
+                         animation:rotate 20s linear infinite;
+                         position: absolute;
+                         inset: 0;
+                         margin: auto;
+                    }
+               }
+          }
+
+          &::after{
+               @include before-after;
+                background: url(#{$asset-path}/line2.png);
+                background-size: cover;
+                bottom: -60px;
+                height: 173px;
+                width: 100%;
+          }
+
+          .logos2{
+               margin-top: 12rem;
+               transform: rotate(-3.5deg);
+               position: relative;
+               top: -70px;
+               z-index: 5;
+
+               .img-box{
+                    align-items: center;
+                    display: flex !important;
+                    justify-content: center;
+               }
+          }
+     }
+
+     &-about{
+          .text{
+               margin-bottom: 6rem;
+               .h{
+                    color: #3F4256;
+                    font-size: 4rem;
+                    font-weight: 500;
+                    line-height: 5.5rem;
+                    margin-bottom: 2.2rem;
+               }
+
+               p{
+                    color: #3F4256;
+                    font-size: 1.8rem;
+                    font-family: $ff-roboto;
+                    font-weight: 400;
+                    line-height: 3.6rem;
+                    span{
+                         color: $primary-color0;
+                         font-weight: 700;
+                    }
+               }
+
+               .btn-group{
+                    margin-top:5.8rem;
+
+                    a{
+                         background-color: $primary-color0;
+                         border: 2px solid $primary-color0;
+                         border-radius: 10px;
+                         color: $monochome1;
+                         display: inline-block;
+                         font-size: 1.8rem;
+                         line-height: 1;
+                         padding: 1.3rem 2.8rem;
+
+                         &:hover{
+                              background-color: $monochome1;
+                              color: $primary-color0;
+                         }
+                    }
+               }
+          }
+
+          .experience-div{
+               font-family: $ff-roboto;
+               h4{
+                    color: #3F4256;
+                    font-size: 3rem;
+                    font-weight: 400;
+                    line-height: 3.6rem;
+                    margin-bottom: 2rem;
+               }
+
+               p{
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 2rem;
+               }
+
+               .state{
+                    margin-top: 5rem;
+                    text-align: center;
+
+                    &-row{
+                         display: flex;
+                         align-items: center;
+                         margin: 0 -3rem;
+                    }
+
+                    &-col{
+                         padding: 0 3rem;
+                         width: calc(100% / 5);
+
+                         h5{
+                              color: #3F4256;
+                              font-size: 2.4rem;
+                              font-weight: 400;
+                              line-height: 1.3;
+                         }
+
+                         .line{
+                              border-radius: 3px;
+                              height: 4px;
+                              margin: 1rem auto 1.8rem;
+                              width: 120px;
+                         }
+
+                         p{
+                              color: #3F4256;
+                              font-size: 1.8rem;
+                              line-height: 1.3;
+                         }
+
+                         &:nth-child(1){
+                              .line{
+                                   background-color: #F85C7A;
+                              }
+                         }
+                         &:nth-child(2){
+                              .line{
+                                   background-color: #5250C2;
+                              }
+                         }
+                         &:nth-child(3){
+                              .line{
+                                   background-color: #FF7A5C;
+                              }
+                         }
+                         &:nth-child(4){
+                              .line{
+                                   background-color: #6A6F99;
+                              }
+                         }
+                         &:nth-child(5){
+                              .line{
+                                   background-color: #6AD8DF;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     &-service {
+          .title {
+
+               small {
+
+                    color: $secondary-color;
+               }
+
+               &-right {
+                    a {
+                         color: $secondary-color;
+                    }
+               }
+
+               &-div {
+                    margin-bottom: 3.5rem;
+               }
+          }
+
+          .service-box {
+               .col-12 {
+                    margin: 1rem 0;
+               }
+
+               .card {
+                    @include img-hover;
+                    background-color: $monochome1;
+                    border: none;
+                    box-shadow: 0px 4px 29.8px 0px #0000001C;
+                    border-radius: 22px;
+                    cursor: pointer;
+                    padding: 1.4rem;
+
+                    &-img {
+                         .img-box {
+                              border: 1px solid $monochome7;
+                              border-radius: 12px;
+                              height: 15rem;
+                              margin-bottom: 2rem;
+                              overflow: hidden;
+                              width: 100%;
+
+                              img {
+                                   @include img-full;
+                              }
+                         }
+                    }
+
+                    &-info {
+                         padding: 0 1.4rem .8rem;
+
+                         .text {
+                              margin-bottom: 1.5rem;
+
+                              h4 {
+                                   @include font-size-18;
+                                   color: $monochome2;
+                                   font-family: $ff-roboto;
+                                   margin-bottom: 1rem;
+                                   font-weight: 700;
+                              }
+
+                              p {
+                                   color: $monochome8;
+                                   font-family: $ff-poppins;
+                                   font-size: 1.2rem;
+                                   line-height: 2.4rem;
+                              }
+                         }
+
+                         .btn {
+                              background-color: rgba($color: $primary-color0, $alpha: .14);
+                              padding: 1rem 1.2rem;
+                              border-radius: 4px;
+                              cursor: pointer;
+
+                              span {
+                                   color: $monochome2;
+                                   font-family: $ff-poppins;
+                                   font-size: 1rem;
+                                   font-weight: 500;
+
+                                   &+span {
+                                        margin-left: 1rem;
+                                   }
+                              }
+
+                              &:hover {
+                                   background-color: $monochome2;
+
+                                   span {
+                                        color: $primary-color0;
+                                   }
+
+                                   svg {
+                                        path {
+                                             fill: $primary-color0;
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     &-featured {
+          .title {
+
+               &-div {
+                    margin-bottom: 14rem;
+               }
+          }
+
+          .featured-box {
+               .col-12 {
+                    &:nth-child(1) {
+                         .card {
+                              &-icon {
+                                   background-color: #FFF4EB;
+                              }
+                         }
+                    }
+
+                    &:nth-child(2) {
+                         .card {
+                              margin-top: 100px;
+
+                              &-icon {
+                                   background-color: #DEF1FC;
+                              }
+                         }
+                    }
+
+                    &:nth-child(3) {
+                         .card {
+                              &-icon {
+                                   background-color: #FFF3F9;
+                              }
+                         }
+                    }
+
+                    &:nth-child(4) {
+                         .card {
+                              margin-top: 100px;
+
+                              &-icon {
+                                   background-color: #EDFFF4;
+                              }
+                         }
+                    }
+               }
+
+               .card {
+                    background-color: $monochome1;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 20px 0px #0000001A;
+                    border: none;
+                    max-width: 100%;
+                    margin: auto;
+                    height: 295px;
+                    padding: 3rem 1rem;
+                    position: relative;
+                    text-align: center;
+                    width: 29rem;
+
+                    &-icon {
+                         border-radius: 100%;
+                         height: 10rem;
+                         position: absolute;
+                         margin: auto;
+                         top: -5rem;
+                         left: 0;
+                         right: 0;
+                         width: 10rem;
+                    }
+
+                    &-info {
+                         .text {
+                              margin: 3.5rem 0 3rem;
+
+                              .h {
+                                   @include font-size-22;
+                                   font-family: $ff-poppins;
+                                   color: $monochome2;
+                                   margin-bottom: 1.6rem
+                              }
+
+                              p {
+                                   @include font-size-16;
+                                   font-family: $ff-roboto;
+                                   color: $monochome8;
+                              }
+                         }
+
+                         .btn {
+                              border: 1px solid $primary-color0;
+                              border-radius: 6px;
+                              color: $primary-color0;
+                              font-family: $ff-inter;
+                              font-size: 1.4rem;
+                              line-height: 1;
+                              padding: 1.6rem 2rem;
+
+                              span {
+                                   &+span {
+                                        margin-left: 1rem;
+                                   }
+                              }
+
+                              &:hover {
+                                   background-color: $primary-color0;
+                                   color: $monochome1;
+
+                                   svg {
+                                        path {
+                                             fill: $monochome1;
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     &-products {
+          .title-div {
+               margin-bottom: 3rem;
+          }
+
+          .logos {
+               background-color: $monochome1;
+               box-shadow: 0px 4px 19.5px 0px #0000001A;
+               border-radius: 18px;
+               padding: 4rem;
+               &-col {
+                    .box {
+                         align-items: center;
+                         display: flex;
+                         justify-content: center;
+                         height: 80px;
+                         margin: auto;
+                         width: 160px;
+
+                         img {
+                              max-width: 100%;
+                              max-height: 100%;
+                         }
+                    }
+               }
+          }
+     }
+
+}
+
+section{ 
+     
+     .shape{
+          position: absolute;
+     
+          &1{
+               top: 0;
+               right: 0;
+          }
+
+          &2{
+               left: -180px;
+               top: 900px;
+          }
+
+          &3{
+               right: -40px;
+               top: 1380px;
+          }
+          &4{
+               left: -80px;
+               top: 2600px;
+          }
+
+          &5{
+               right: -300px;
+               top: 4500px;               
+          }
+
+          &6{
+               left: -150px;
+               top: 5700px;
+          }
+
+          @media (max-width:1600px) {
+               right: 0 !important;     
+               max-width: 50%;
+               height: auto;
+
+               img{
+                    max-width: 100%;
+               }
+          }
+
+          @media (max-width:1199px) {
+               display: none;
+          }
+     }
+}
+
+@media (max-width:1199px){
+     .section{
+          &-hero {
+               .logos2{
+                    margin-top: 18rem;
+               }
+          }
+
+          &-about{     
+               
+               .row{
+                    text-align: center;
+               }
+
+               .col-12 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin-top:3rem ;
+
+                    & + .col-12{
+                         margin-top: 5rem;
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width:991px){
+     .section{
+          &-hero{
+               .right{
+                    margin-bottom: 2rem;
+               }
+          }
+          &-about {
+               .experience-div {
+                    .state{
+                         &-row{
+                              flex-wrap: wrap;
+                              justify-content: center;
+                         }
+
+                         &-col{
+                              margin: 1.5rem 0;
+                              width: calc(100% / 3);
+                         }
+                    }
+               }
+          }
+
+          &-service {
+               .title {
+                    text-align: center;
+               }
+               .right{
+                    .title-right{
+                         text-align: center;
+                         justify-content:  center !important;
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width:767px){
+     .section{
+          &-service {
+               .service{
+                    &-box {
+                         .card-img {
+                              .img-box{
+                                   height: 260px;
+                              }
+                         }
+                    }
+               }
+          }
+          &-featured {
+               .featured-box {
+                    .col-12{
+                         &:nth-child(2), 
+                         &:nth-child(3),
+                         &:nth-child(4) {
+                              .card{
+                                   margin-top: 8rem;
+                              }
+                         }
+                    }
+                    .card{
+                         width: 100%;
+                    }
+               } 
+          }
+
+          &-about {
+               .experience-div {
+                    .state-col{
+                         width: 100%;
+                    }
+               }
+          }
+     }
+}

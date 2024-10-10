@@ -1,0 +1,36 @@
+$html-font:10px;
+html{
+     font-size: $html-font;
+ }
+
+$ff-poppins:"Poppins", sans-serif;
+$ff-roboto:"Roboto", sans-serif;
+$ff-inter: "Inter", sans-serif;
+$ff-inria: "Inria Serif", serif;;
+
+
+$primary-color0:#FFA30C; 
+$primary-color0-1:#F8D3D3; 
+$primary-color1:#20466B; 
+$secondary-color:#3B76E5; 
+
+$monochome:#000;
+$monochome1:#fff;
+$monochome2:#141D38;
+$monochome3:#141D388F;
+$monochome4:#f8f8f8;
+$monochome5:#292F3B;
+$monochome6:#787876;
+$monochome7:#E7E7E7;
+$monochome8:#737887;
+$monochome9:#515D62;
+
+$asset-path: "../images";
+// background: url(#{$asset-path}/gfg.gif);
+
+
+@media (max-width: 1550px) {
+     html{
+          font-size: calc($html-font - (($html-font * 20 ) / 100));
+     }
+ }

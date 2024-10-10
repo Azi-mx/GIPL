@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIPL</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/lib/slick.css">
+    <link rel="stylesheet" href="css/lib/slick-theme.css">
+    <link rel="stylesheet" href="css/common.css?v=08092024" />
+    <link rel="stylesheet" href="css/homepage.css?v=08092024" />
+    <link rel="stylesheet" href="css/newsletter-popup-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-row d-flex align-items-center justify-content-between">
+                <a href="index.html" class="">
+                    <img src="images/logo.svg" alt="Maison-6405">
+                </a>
+
+                <ul class="nav align-items-center">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" id="dropdownMenuButton1" class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="about-us.html">About GIPL</a></li>
+                            <li><a class="dropdown-item" href="our-mission.html">Our Mission &amp; Vision</a></li>
+                            <li><a class="dropdown-item" href="service-agreement.html">Service Legal Agreement</a></li>
+                            <li><a class="dropdown-item" href="isma-policy.html">ISMA Policy</a></li>
+                            <li><a class="dropdown-item" href="keymagerial.html">Key Managerial Personnel</a></li>
+                            <li><a class="dropdown-item" href="director_message.html">Director message</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html" class="nav-link ">SERVICES</a></li>
+                    <li><a href="products.html" class="nav-link ">PRODUCTS</a></li>
+                    <li><a href="portfolio.html" class="nav-link">PORTFOLIO</a></li>
+                    <li><a href="tenders.html" class="nav-link">TENDERS</a></li>
+                    <li><a href="career.html" class="nav-link active">CAREER</a></li>
+                    <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+                    <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                    <li class="d-none-n d-block-991">
+                        <a href="javascript:void(0)" data-modal-target="modal2"
+                            class="btn2 btn2-large btn2-primary">Newsletter</a>
+                    </li>
+
+                </ul>
+                <ul class="nav align-items-center d-none-991">
+                    <li>
+                        <a href="javascript:void(0)" data-modal-target="modal2"
+                            class="btn2 btn2-large btn2-primary">Newsletter</a>
+                    </li>
+                </ul>
+                <div class="menu-icon">
+
+                    <label for="check">
+                        <input type="checkbox" id="check" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="modal-close primary-btn bthome">Back To Home</span>
+            <div class="row process-box">
+                <div class="col-12 col-lg-4 col-md-6 modal-side">
+
+                    <!-- Modal sidebar right -->
+                    <div class="modal-sidebar d-flex flex-lg-column flex-row">
+                        <div class="msidebar-year active-year" data-year="2024" style="padding-top: 0;">Year - 2024
+                            &nbsp;
+                            <svg width="14" height="12" viewBox="0 0 4 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.23828L3.25 4.57534L0.75 0.912407" stroke="black"
+                                    stroke-opacity="0.69" />
+                            </svg>
+                        </div>
+                        <div class="msidebar-year" data-year="2023">Year - 2023 &nbsp;
+                            <svg width="14" height="12" viewBox="0 0 4 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.23828L3.25 4.57534L0.75 0.912407" stroke="black"
+                                    stroke-opacity="0.69" />
+                            </svg>
+                        </div>
+                        <div class="msidebar-year" data-year="2022">Year - 2022 &nbsp;
+                            <svg width="14" height="12" viewBox="0 0 4 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.23828L3.25 4.57534L0.75 0.912407" stroke="black"
+                                    stroke-opacity="0.69" />
+                            </svg>
+                        </div>
+                        <div class="msidebar-year" data-year="2021">Year - 2021 &nbsp;
+                            <svg width="14" height="12" viewBox="0 0 4 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.23828L3.25 4.57534L0.75 0.912407" stroke="black"
+                                    stroke-opacity="0.69" />
+                            </svg>
+                        </div>
+                        <div class="msidebar-year" data-year="2020">Year - 2020 &nbsp;
+                            <svg width="14" height="12" viewBox="0 0 4 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.23828L3.25 4.57534L0.75 0.912407" stroke="black"
+                                    stroke-opacity="0.69" />
+                            </svg>
+                        </div>
+                        <div class="msidebar-year" data-year="2019">Year - 2019 &nbsp;
+                            <svg width="14" height="12" viewBox="0 0 4 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.23828L3.25 4.57534L0.75 0.912407" stroke="black"
+                                    stroke-opacity="0.69" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-6">
+                    <div class="scene" id="book-2024">
+                        <article class="book">
+                            <section class="page active">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                            <section class="page">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                            <section class="page">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                            <section class="page">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="scene" id="book-2023" style="display: none;">
+                        <article class="book">
+                            <section class="page active">
+                                <div class="front">
+                                    <img src="./images/Mask group 1.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                            <section class="page">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                            <section class="page">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                            <section class="page">
+                                <div class="front">
+                                    <img src="./images/newsletter.png" alt="">
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media-head">
+        <div class="media-content">
+            <div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.5 9V7.21406C13.5 6.40781 13.6781 6 14.9297 6H16.5V3H13.8797C10.6688 3 9.60938 4.47188 9.60938 6.99844V9H7.5V12H9.60938V21H13.5V12H16.1437L16.5 9H13.5Z"
+                        fill="#3A7BFF"></path>
+                </svg>
+            </div>
+
+            <div>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_204_7445)">
+                        <mask id="mask0_204_7445" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="17" height="17">
+                            <path d="M17 0H0V17H17V0Z" fill="white"></path>
+                        </mask>
+                        <g mask="url(#mask0_204_7445)">
+                            <path
+                                d="M10.1173 7.19464L16.4459 0H14.9463L9.45111 6.24701L5.06215 0H0L6.63697 9.44658L0 16.9913H1.49977L7.30279 10.3942L11.9379 16.9913H17L10.1169 7.19464H10.1173ZM8.06317 9.52981L7.39071 8.58914L2.04016 1.10416H4.34371L8.66167 7.14478L9.33413 8.08545L14.947 15.9373H12.6434L8.06317 9.53017V9.52981Z"
+                                fill="black"></path>
+                        </g>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_204_7445">
+                            <rect width="17" height="17" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+            <div>
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.13375 13.9997H0.23125V4.65281H3.13375V13.9997ZM1.68094 3.37781C0.752813 3.37781 0 2.60906 0 1.68094C6.64312e-09 1.23512 0.177098 0.807572 0.492335 0.492335C0.807572 0.177098 1.23513 0 1.68094 0C2.12675 0 2.5543 0.177098 2.86954 0.492335C3.18478 0.807572 3.36188 1.23512 3.36188 1.68094C3.36188 2.60906 2.60875 3.37781 1.68094 3.37781ZM13.9969 13.9997H11.1006V9.44969C11.1006 8.36531 11.0787 6.97469 9.59156 6.97469C8.0825 6.97469 7.85125 8.15281 7.85125 9.37156V13.9997H4.95188V4.65281H7.73562V5.92781H7.77625C8.16375 5.19344 9.11031 4.41844 10.5225 4.41844C13.46 4.41844 14 6.35281 14 8.86531V13.9997H13.9969Z"
+                        fill="#3156A3"></path>
+                </svg>
+
+            </div>
+            <div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.475 5.475C17.475 5.325 17.25 4.125 16.725 3.6C16.05 2.85 15.3 2.775 14.925 2.775H14.85C12.525 2.625 9.075 2.625 9 2.625C9 2.625 5.475 2.625 3.15 2.775H3.075C2.7 2.775 1.95 2.85 1.275 3.6C0.75 4.2 0.525 5.4 0.525 5.55C0.525 5.625 0.375 6.975 0.375 8.4V9.675C0.375 11.1 0.525 12.45 0.525 12.525C0.525 12.675 0.75 13.875 1.275 14.4C1.875 15.075 2.625 15.15 3.075 15.225C3.15 15.225 3.225 15.225 3.3 15.225C4.65 15.375 8.775 15.375 8.925 15.375C8.925 15.375 12.45 15.375 14.775 15.225H14.85C15.225 15.15 15.975 15.075 16.65 14.4C17.175 13.8 17.4 12.6 17.4 12.45C17.4 12.375 17.55 11.025 17.55 9.6V8.325C17.625 6.975 17.475 5.55 17.475 5.475ZM11.925 9.15L7.425 11.55C7.35 11.55 7.35 11.625 7.275 11.625C7.2 11.625 7.125 11.625 7.125 11.55C7.05 11.475 6.975 11.4 6.975 11.25V6.375C6.975 6.225 7.05 6.15 7.125 6.075C7.2 6 7.35 6 7.5 6.075L12 8.475C12.15 8.55 12.225 8.625 12.225 8.775C12.225 8.925 12.075 9.075 11.925 9.15Z"
+                        fill="#FF4933"></path>
+                </svg>
+
+            </div>
+        </div>
+    </div>
+    <div class="fabs">
+        <a href="javascript:void(0)"></a>
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20.5" cy="20.5" r="18.5" fill="white" stroke="#FFA30C" stroke-width="4" />
+            <path
+                d="M17.0833 10.25C17.0833 8.37083 18.6208 6.83333 20.5 6.83333C22.3792 6.83333 23.9167 8.37083 23.9167 10.25C23.9167 12.1292 22.3792 13.6667 20.5 13.6667C18.6208 13.6667 17.0833 12.1292 17.0833 10.25ZM41 20.5C41 31.8092 31.8092 41 20.5 41C9.19083 41 0 31.8092 0 20.5C0 9.19083 9.19083 0 20.5 0C31.8092 0 41 9.19083 41 20.5ZM37.5833 20.5C37.5833 11.0871 29.9129 3.41667 20.5 3.41667C11.0871 3.41667 3.41667 11.0871 3.41667 20.5C3.41667 29.9129 11.0871 37.5833 20.5 37.5833C29.9129 37.5833 37.5833 29.9129 37.5833 20.5ZM28.2729 12.1463L21.7983 15.375H19.1846L12.71 12.1463C11.8558 11.7192 10.8479 12.0608 10.4208 12.915C9.99375 13.7521 10.3354 14.7771 11.1896 15.2042L17.0833 18.1425V24.1729L13.8888 29.9129C13.4275 30.7329 13.7179 31.775 14.555 32.2363C14.8113 32.39 15.1017 32.4583 15.3921 32.4583C15.99 32.4583 16.5708 32.1338 16.8783 31.5871L20.1925 25.625H20.8246L24.1388 31.5871C24.4463 32.1508 25.0271 32.4583 25.625 32.4583C25.9154 32.4583 26.1887 32.39 26.4621 32.2363C27.2821 31.775 27.5896 30.7329 27.1283 29.9129L23.9338 24.1729V18.1425L29.8275 15.2042C30.6646 14.7771 31.0063 13.7521 30.5963 12.915C30.1692 12.0779 29.1442 11.7363 28.3071 12.1463H28.2729Z"
+                fill="#FFA30C" />
+        </svg>
+
+        </a>
+    </div>
+
+    <section>
+
+        <div class="section section3 section-about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="text">
+                            <h3 class="h text-center">Career</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of
+                                a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                here', making it look like readable English. Many desktop publishing packages and web
+                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                                ipsum' will uncover many web sites still in their infancy. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column gap-4 gallery-content-4 position-relative">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-12">
+                    <div class="menu_new">
+                        <div class="menu_new--wrapper wow animate__animated animate__bounceInLeft">
+                            <div class="menu_new--item">
+                                <figure>
+                                    <img src="https://images.unsplash.com/photo-1595265677860-9a3168007dc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        alt="" />
+                                </figure>
+                            </div>
+
+                            <div class="menu_new--item">
+                                <figure>
+                                    <img src="https://images.unsplash.com/photo-1594786118579-95ba90c801ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        alt="" />
+                                </figure>
+                            </div>
+
+                            <div class="menu_new--item">
+                                <figure>
+                                    <img src="https://images.unsplash.com/photo-1509339022327-1e1e25360a41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        alt="" />
+                                </figure>
+                            </div>
+
+                            <div class="menu_new--item">
+                                <figure>
+                                    <img src="https://images.unsplash.com/photo-1525417071002-5ee4e6bb44f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        alt="" />
+                                </figure>
+                            </div>
+
+                            <div class="menu_new--item">
+                                <figure>
+                                    <img src="https://images.unsplash.com/photo-1594072702031-f0e2a602dd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        alt="" />
+                                </figure>
+                            </div>
+
+                            <div class="menu_new--item">
+                                <figure>
+                                    <img src="https://images.unsplash.com/photo-1592989819277-a3aafa40c66a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                        alt="" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section section3 section-about" id="product-container">
+            <div class="container d-flex flex-column gap-5">
+                <div
+                    class="wow animate__animated animate__fadeInLeftBig row align-items-center product-box py-4 bg-white">
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <img src="./images/career/Rectangle 956563.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12 p-0">
+                        <div>
+                            <div class="text-career d-flex flex-column gap-4">
+                                <h3 class="h">Designation Title</h3>
+                                <ul class="d-flex flex-lg-row flex-column gap-lg-5 gap-2">
+                                    <li>No of Positions - 150</li>
+                                    <li>Experience - 05/10 Years</li>
+                                </ul>
+                                <p class="product-para">It is a long established fact that a reader will be
+                                    distracted
+                                    by the readable content of a page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letontent here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <div class="d-flex w-100 justify-content-center  justify-content-lg-start">
+                                <button class="product-inquiry ">Apply Now
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="#FFA30C"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7188 5.59896L8.71875 9.76562C8.51042 9.92188 8.27083 10 8 10C7.72917 10 7.48958 9.92188 7.28125 9.76562C7.09375 9.59201 7 9.39236 7 9.16667C7 8.94097 7.09375 8.74132 7.28125 8.56771L10.5938 5.83333H1C0.708333 5.83333 0.46875 5.75521 0.28125 5.59896C0.09375 5.44271 0 5.24306 0 5C0 4.75694 0.09375 4.55729 0.28125 4.40104C0.46875 4.24479 0.708333 4.16667 1 4.16667H10.5938L7.28125 1.43229C7.09375 1.25868 7 1.05903 7 0.833334C7 0.607639 7.09375 0.407987 7.28125 0.234375C7.48958 0.078125 7.72917 0 8 0C8.27083 0 8.51042 0.078125 8.71875 0.234375L13.7188 4.40104C13.9062 4.57465 14 4.77431 14 5C14 5.22569 13.9062 5.42535 13.7188 5.59896Z"
+                                            fill="#FFA30C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="wow animate__animated animate__fadeInLeftBig row align-items-center product-box py-4 bg-white">
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <img src="./images/career/Rectangle 956563 (1).png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12 p-0">
+                        <div>
+                            <div class="text-career d-flex flex-column gap-4">
+                                <h3 class="h">Designation Title</h3>
+                                <ul class="d-flex flex-lg-row flex-column gap-lg-5 gap-2">
+                                    <li>No of Positions - 150</li>
+                                    <li>Experience - 05/10 Years</li>
+                                </ul>
+                                <p class="product-para">It is a long established fact that a reader will be
+                                    distracted
+                                    by the readable content of a page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letontent here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <div class="d-flex w-100 justify-content-center  justify-content-lg-start">
+                                <button class="product-inquiry ">Apply Now
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="#FFA30C"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7188 5.59896L8.71875 9.76562C8.51042 9.92188 8.27083 10 8 10C7.72917 10 7.48958 9.92188 7.28125 9.76562C7.09375 9.59201 7 9.39236 7 9.16667C7 8.94097 7.09375 8.74132 7.28125 8.56771L10.5938 5.83333H1C0.708333 5.83333 0.46875 5.75521 0.28125 5.59896C0.09375 5.44271 0 5.24306 0 5C0 4.75694 0.09375 4.55729 0.28125 4.40104C0.46875 4.24479 0.708333 4.16667 1 4.16667H10.5938L7.28125 1.43229C7.09375 1.25868 7 1.05903 7 0.833334C7 0.607639 7.09375 0.407987 7.28125 0.234375C7.48958 0.078125 7.72917 0 8 0C8.27083 0 8.51042 0.078125 8.71875 0.234375L13.7188 4.40104C13.9062 4.57465 14 4.77431 14 5C14 5.22569 13.9062 5.42535 13.7188 5.59896Z"
+                                            fill="#FFA30C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="wow animate__animated animate__fadeInLeftBig row align-items-center product-box py-4 bg-white">
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <img src="./images/career/Rectangle 956563 (2).png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12 p-0">
+                        <div>
+                            <div class="text-career d-flex flex-column gap-4">
+                                <h3 class="h">Designation Title</h3>
+                                <ul class="d-flex flex-lg-row flex-column gap-lg-5 gap-2">
+                                    <li>No of Positions - 150</li>
+                                    <li>Experience - 05/10 Years</li>
+                                </ul>
+                                <p class="product-para">It is a long established fact that a reader will be
+                                    distracted
+                                    by the readable content of a page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letontent here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <div class="d-flex w-100 justify-content-center  justify-content-lg-start">
+                                <button class="product-inquiry ">Apply Now
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="#FFA30C"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7188 5.59896L8.71875 9.76562C8.51042 9.92188 8.27083 10 8 10C7.72917 10 7.48958 9.92188 7.28125 9.76562C7.09375 9.59201 7 9.39236 7 9.16667C7 8.94097 7.09375 8.74132 7.28125 8.56771L10.5938 5.83333H1C0.708333 5.83333 0.46875 5.75521 0.28125 5.59896C0.09375 5.44271 0 5.24306 0 5C0 4.75694 0.09375 4.55729 0.28125 4.40104C0.46875 4.24479 0.708333 4.16667 1 4.16667H10.5938L7.28125 1.43229C7.09375 1.25868 7 1.05903 7 0.833334C7 0.607639 7.09375 0.407987 7.28125 0.234375C7.48958 0.078125 7.72917 0 8 0C8.27083 0 8.51042 0.078125 8.71875 0.234375L13.7188 4.40104C13.9062 4.57465 14 4.77431 14 5C14 5.22569 13.9062 5.42535 13.7188 5.59896Z"
+                                            fill="#FFA30C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="wow animate__animated animate__fadeInLeftBig row align-items-center product-box py-4 bg-white">
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <img src="./images/career/Rectangle 956563 (3).png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12 p-0">
+                        <div>
+                            <div class="text-career d-flex flex-column gap-4">
+                                <h3 class="h">Designation Title</h3>
+                                <ul class="d-flex flex-lg-row flex-column gap-lg-5 gap-2">
+                                    <li>No of Positions - 150</li>
+                                    <li>Experience - 05/10 Years</li>
+                                </ul>
+                                <p class="product-para">It is a long established fact that a reader will be
+                                    distracted
+                                    by the readable content of a page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letontent here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <div class="d-flex w-100 justify-content-center  justify-content-lg-start">
+                                <button class="product-inquiry ">Apply Now
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="#FFA30C"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7188 5.59896L8.71875 9.76562C8.51042 9.92188 8.27083 10 8 10C7.72917 10 7.48958 9.92188 7.28125 9.76562C7.09375 9.59201 7 9.39236 7 9.16667C7 8.94097 7.09375 8.74132 7.28125 8.56771L10.5938 5.83333H1C0.708333 5.83333 0.46875 5.75521 0.28125 5.59896C0.09375 5.44271 0 5.24306 0 5C0 4.75694 0.09375 4.55729 0.28125 4.40104C0.46875 4.24479 0.708333 4.16667 1 4.16667H10.5938L7.28125 1.43229C7.09375 1.25868 7 1.05903 7 0.833334C7 0.607639 7.09375 0.407987 7.28125 0.234375C7.48958 0.078125 7.72917 0 8 0C8.27083 0 8.51042 0.078125 8.71875 0.234375L13.7188 4.40104C13.9062 4.57465 14 4.77431 14 5C14 5.22569 13.9062 5.42535 13.7188 5.59896Z"
+                                            fill="#FFA30C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="wow animate__animated animate__fadeInLeftBig row align-items-center product-box py-4 bg-white">
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <img src="./images/career/Rectangle 956563 (4).png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12 p-0">
+                        <div>
+                            <div class="text-career d-flex flex-column gap-4">
+                                <h3 class="h">Designation Title</h3>
+                                <ul class="d-flex flex-lg-row flex-column gap-lg-5 gap-2">
+                                    <li>No of Positions - 150</li>
+                                    <li>Experience - 05/10 Years</li>
+                                </ul>
+                                <p class="product-para">It is a long established fact that a reader will be
+                                    distracted
+                                    by the readable content of a page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letontent here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12">
+                        <div>
+                            <div class="d-flex w-100 justify-content-center  justify-content-lg-start">
+                                <button class="product-inquiry ">Apply Now
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="#FFA30C"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7188 5.59896L8.71875 9.76562C8.51042 9.92188 8.27083 10 8 10C7.72917 10 7.48958 9.92188 7.28125 9.76562C7.09375 9.59201 7 9.39236 7 9.16667C7 8.94097 7.09375 8.74132 7.28125 8.56771L10.5938 5.83333H1C0.708333 5.83333 0.46875 5.75521 0.28125 5.59896C0.09375 5.44271 0 5.24306 0 5C0 4.75694 0.09375 4.55729 0.28125 4.40104C0.46875 4.24479 0.708333 4.16667 1 4.16667H10.5938L7.28125 1.43229C7.09375 1.25868 7 1.05903 7 0.833334C7 0.607639 7.09375 0.407987 7.28125 0.234375C7.48958 0.078125 7.72917 0 8 0C8.27083 0 8.51042 0.078125 8.71875 0.234375L13.7188 4.40104C13.9062 4.57465 14 4.77431 14 5C14 5.22569 13.9062 5.42535 13.7188 5.59896Z"
+                                            fill="#FFA30C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape1">
+            <img src="images/shape-01.svg" alt="">
+        </div>
+        <div class="shape shape3">
+            <img src="images/orange_shape.svg" alt="">
+        </div>
+    </section>
+
+    <footer class="footer position-relative z-1">
+        <div class="container">
+            <div class="footer-top">
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Careers</a></li>
+                    <li><a href="javascript:void(0)">About GIPL</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                    <li><a href="javascript:void(0)">Terms of Use</a></li>
+                    <li><a href="javascript:void(0)">ISMS Policy</a></li>
+                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)">Mobile Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="about">
+                            <a href="index.html">
+                                <img src="images/logo.svg" alt="">
+                            </a>
+                            <address>
+                                <p>2nd Floor, Block-15, Udhyog</p>
+                                <p>Bhavan, Sector-11,</p>
+                                <p>Gandhinagar – 382011.</p>
+                            </address>
+                            <div class="social-media">
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <path
+                                            d="M13 11.25C12.0717 11.25 11.1815 11.6187 10.5251 12.2751C9.86875 12.9315 9.5 13.8217 9.5 14.75V15.1018L20 20.756L30.5 15.1035V14.75C30.5 13.8217 30.1313 12.9315 29.4749 12.2751C28.8185 11.6187 27.9283 11.25 27 11.25H13ZM30.5 17.0897L20.4148 22.52C20.2873 22.5886 20.1448 22.6245 20 22.6245C19.8552 22.6245 19.7127 22.5886 19.5852 22.52L9.5 17.0897V25.25C9.5 26.1783 9.86875 27.0685 10.5251 27.7249C11.1815 28.3813 12.0717 28.75 13 28.75H27C27.9283 28.75 28.8185 28.3813 29.4749 27.7249C30.1313 27.0685 30.5 26.1783 30.5 25.25V17.0897Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <path
+                                            d="M14.0983 11.8345C14.098 12.4533 13.8519 13.0467 13.4141 13.4841C12.9763 13.9214 12.3826 14.167 11.7638 14.1667C11.145 14.1664 10.5516 13.9202 10.1142 13.4824C9.67687 13.0446 9.43133 12.451 9.43164 11.8322C9.43195 11.2133 9.67808 10.62 10.1159 10.1826C10.5537 9.74523 11.1473 9.49969 11.7661 9.5C12.385 9.50031 12.9783 9.74644 13.4157 10.1842C13.8531 10.622 14.0986 11.2157 14.0983 11.8345ZM14.1683 15.8945H9.50164V30.5012H14.1683V15.8945ZM21.5416 15.8945H16.8983V30.5012H21.495V22.8362C21.495 18.5662 27.06 18.1695 27.06 22.8362V30.5012H31.6683V21.2495C31.6683 14.0512 23.4316 14.3195 21.495 17.8545L21.5416 15.8945Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <path
+                                            d="M32.2016 12.9993C31.3033 13.4077 30.3349 13.676 29.3316 13.8043C30.3583 13.186 31.1516 12.206 31.5249 11.0277C30.5566 11.611 29.4833 12.0193 28.3516 12.2527C27.4299 11.2493 26.1349 10.666 24.6649 10.666C21.9233 10.666 19.6833 12.906 19.6833 15.671C19.6833 16.0677 19.7299 16.4527 19.8116 16.8144C15.6583 16.6044 11.9599 14.6093 9.49826 11.5877C9.06659 12.3227 8.82159 13.186 8.82159 14.096C8.82159 15.8343 9.69659 17.3743 11.0499 18.2493C10.2216 18.2493 9.45159 18.016 8.77492 17.666V17.701C8.77492 20.1277 10.5016 22.1577 12.7883 22.6127C12.0541 22.8136 11.2834 22.8415 10.5366 22.6944C10.8535 23.6889 11.474 24.5592 12.3111 25.1828C13.1482 25.8064 14.1596 26.152 15.2033 26.171C13.4342 27.5715 11.2413 28.3286 8.98492 28.3177C8.58826 28.3177 8.19159 28.2943 7.79492 28.2477C10.0116 29.671 12.6483 30.4993 15.4716 30.4993C24.6649 30.4993 29.7166 22.8693 29.7166 16.2543C29.7166 16.0327 29.7166 15.8227 29.7049 15.601C30.6849 14.901 31.5249 14.0143 32.2016 12.9993Z"
+                                            fill="white" />
+                                    </svg>
+
+
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <path
+                                            d="M22.3327 21.7507H25.2493L26.416 17.084H22.3327V14.7507C22.3327 13.549 22.3327 12.4173 24.666 12.4173H26.416V8.49732C26.0357 8.44715 24.5995 8.33398 23.0828 8.33398C19.9153 8.33398 17.666 10.2672 17.666 13.8173V17.084H14.166V21.7507H17.666V31.6673H22.3327V21.7507Z"
+                                            fill="white" />
+                                    </svg>
+
+
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <g clip-path="url(#clip0_487_2157)">
+                                            <path
+                                                d="M27.3813 32.2495C26.3138 32.2495 24.8143 31.8634 22.5688 30.6089C19.8383 29.0776 17.7263 27.6639 15.0105 24.9553C12.3921 22.3385 11.1178 20.6443 9.33447 17.3991C7.31979 13.735 7.66322 11.8144 8.04713 10.9936C8.50432 10.0125 9.17916 9.42566 10.0514 8.84324C10.5469 8.51864 11.0712 8.24038 11.6177 8.01199C11.6724 7.98848 11.7232 7.96606 11.7686 7.94582C12.0393 7.82387 12.4495 7.63957 12.969 7.83645C13.3157 7.9666 13.6253 8.23293 14.1098 8.71145C15.1035 9.69145 16.4613 11.874 16.9623 12.9459C17.2986 13.6683 17.5212 14.1452 17.5217 14.68C17.5217 15.3062 17.2067 15.7891 16.8245 16.3103C16.7528 16.4082 16.6817 16.5017 16.6128 16.5925C16.1967 17.1393 16.1053 17.2974 16.1655 17.5796C16.2874 18.1467 17.1969 19.8349 18.6915 21.3262C20.1861 22.8175 21.8256 23.6696 22.3949 23.791C22.6892 23.8539 22.8505 23.7587 23.4149 23.3278C23.4958 23.266 23.5789 23.202 23.6659 23.138C24.2488 22.7043 24.7093 22.3975 25.3207 22.3975H25.324C25.8561 22.3975 26.3117 22.6283 27.0663 23.0089C28.0507 23.5055 30.2989 24.8459 31.2849 25.8407C31.7646 26.3241 32.032 26.6325 32.1627 26.9787C32.3596 27.4999 32.1742 27.9084 32.0533 28.1818C32.0331 28.2272 32.0106 28.277 31.9871 28.3322C31.7569 28.8778 31.477 29.401 31.151 29.8952C30.5696 30.7647 29.9806 31.4379 28.9974 31.8957C28.4924 32.1345 27.9399 32.2555 27.3813 32.2495Z"
+                                                fill="white" />
+                                            <path
+                                                d="M27.9806 8.13036V17.4395H25.4534V10.4576H25.3988L23.3625 11.6758V9.53036L25.6534 8.13036H27.9806Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_487_2157">
+                                                <rect width="28" height="28" fill="white" transform="translate(6 6)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <g clip-path="url(#clip0_487_2161)">
+                                            <path
+                                                d="M27.3813 32.2495C26.3138 32.2495 24.8143 31.8634 22.5688 30.6089C19.8383 29.0776 17.7263 27.6639 15.0105 24.9553C12.3921 22.3385 11.1178 20.6443 9.33447 17.3991C7.31979 13.735 7.66322 11.8144 8.04713 10.9936C8.50432 10.0125 9.17916 9.42566 10.0514 8.84324C10.5469 8.51864 11.0712 8.24038 11.6177 8.01199C11.6724 7.98848 11.7232 7.96606 11.7686 7.94582C12.0393 7.82387 12.4495 7.63957 12.969 7.83645C13.3157 7.9666 13.6253 8.23293 14.1098 8.71145C15.1035 9.69145 16.4613 11.874 16.9623 12.9459C17.2986 13.6683 17.5212 14.1452 17.5217 14.68C17.5217 15.3062 17.2067 15.7891 16.8245 16.3103C16.7528 16.4082 16.6817 16.5017 16.6128 16.5925C16.1967 17.1393 16.1053 17.2974 16.1655 17.5796C16.2874 18.1467 17.1969 19.8349 18.6915 21.3262C20.1861 22.8175 21.8256 23.6696 22.3949 23.791C22.6892 23.8539 22.8505 23.7587 23.4149 23.3278C23.4958 23.266 23.5789 23.202 23.6659 23.138C24.2488 22.7043 24.7093 22.3975 25.3207 22.3975H25.324C25.8561 22.3975 26.3117 22.6283 27.0663 23.0089C28.0507 23.5055 30.2989 24.8459 31.2849 25.8407C31.7646 26.3241 32.032 26.6325 32.1627 26.9787C32.3596 27.4999 32.1742 27.9084 32.0533 28.1818C32.0331 28.2272 32.0106 28.277 31.9871 28.3322C31.7569 28.8778 31.477 29.401 31.151 29.8952C30.5696 30.7647 29.9806 31.4379 28.9974 31.8957C28.4924 32.1345 27.9399 32.2555 27.3813 32.2495Z"
+                                                fill="white" />
+                                            <path
+                                                d="M23.4556 18.4395V16.5076L27.1454 13.4554C27.3901 13.2525 27.5994 13.0626 27.7733 12.8855C27.9503 12.7052 28.0856 12.52 28.1789 12.3301C28.2755 12.1401 28.3238 11.9292 28.3238 11.6974C28.3238 11.4431 28.2691 11.2257 28.1596 11.0454C28.0534 10.8651 27.9053 10.7267 27.7153 10.6301C27.5253 10.5303 27.3064 10.4804 27.0585 10.4804C26.8106 10.4804 26.5916 10.5303 26.4017 10.6301C26.2149 10.7299 26.07 10.8764 25.967 11.0696C25.864 11.2627 25.8125 11.4978 25.8125 11.7747H23.2625C23.2625 11.0792 23.4186 10.4804 23.7309 9.97809C24.0432 9.47582 24.4843 9.08945 25.0542 8.819C25.6241 8.54854 26.2922 8.41332 27.0585 8.41332C27.8505 8.41332 28.5363 8.54049 29.1159 8.79485C29.6986 9.04599 30.1478 9.40015 30.4633 9.85735C30.7821 10.3145 30.9414 10.8506 30.9414 11.4656C30.9414 11.8455 30.8626 12.2238 30.7048 12.6005C30.547 12.974 30.2637 13.3877 29.8548 13.8417C29.4459 14.2957 28.8647 14.8366 28.1113 15.4645L27.1841 16.2372V16.2951H31.0477V18.4395H23.4556Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_487_2161">
+                                                <rect width="28" height="28" fill="white" transform="translate(6 6)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <rect width="40" height="40" rx="20" fill="#3B4C6F" />
+                                        <path
+                                            d="M20.2853 10.666C20.9083 10.6695 22.467 10.6847 24.1237 10.7512L24.7117 10.7768C26.3788 10.855 28.0448 10.9903 28.872 11.2202C29.9745 11.5305 30.8402 12.4335 31.133 13.5792C31.5997 15.3992 31.658 18.9482 31.665 19.808L31.6662 19.9853V20.1883C31.658 21.0482 31.5997 24.5983 31.133 26.4172C30.8367 27.5663 29.9698 28.4705 28.872 28.7762C28.0448 29.006 26.3788 29.1413 24.7117 29.2195L24.1237 29.2463C22.467 29.3117 20.9083 29.328 20.2853 29.3303L20.0112 29.3315H19.7137C18.3953 29.3233 12.8817 29.2638 11.127 28.7762C10.0257 28.4658 9.15882 27.5628 8.86598 26.4172C8.39932 24.5972 8.34098 21.0482 8.33398 20.1883V19.808C8.34098 18.9482 8.39932 15.398 8.86598 13.5792C9.16232 12.43 10.0292 11.5258 11.1282 11.2213C12.8817 10.7325 18.3965 10.673 19.7148 10.666H20.2853ZM17.6662 15.916V24.0827L24.6662 19.9993L17.6662 15.916Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="quick-link">
+                            <h4>Web Design</h4>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">Web Application Design</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Open Source Theme Design</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">PSD to HTML Conversion</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Website Design</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="quick-link">
+                            <h4>Web Development</h4>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">ASP Net Application Development</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">eCommerce Development</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Database Application</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Mobile Application</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Software Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="quick-link">
+                            <h4>Web Hosting</h4>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">REC Mountable Server with ECC</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Dedicated Data Pipe</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Comprehensive Power Backup</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Temperature Controlled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lib/slick.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <!-- infinite slider 1 -->
+
+    <script>
+        /*--------------------
+Vars
+--------------------*/
+        const $menu_new = document.querySelector(".menu_new");
+        const $items_new = document.querySelectorAll(".menu_new--item");
+        const $images_new = document.querySelectorAll(".menu_new--item img");
+        let menuWidth_new = $menu_new.clientWidth;
+        let itemWidth_new = $items_new[0].clientWidth;
+        let wrapWidth_new = $items_new.length * itemWidth_new;
+
+        let scrollSpeed_new = 0;
+        let oldScrollY_new = 0;
+        let scrollY_new = 0;
+        let y_new = 0;
+
+        /*--------------------
+        Lerp
+        --------------------*/
+        const lerp_new = (v0, v1, t) => {
+            return v0 * (1 - t) + v1 * t;
+        };
+
+        /*--------------------
+        Dispose
+        --------------------*/
+        const dispose_new = (scroll) => {
+            gsap.set($items_new, {
+                x: (i) => {
+                    return i * itemWidth_new + scroll;
+                },
+                modifiers: {
+                    x: (x, target) => {
+                        const s = gsap.utils.wrap(
+                            -itemWidth_new,
+                            wrapWidth_new - itemWidth_new,
+                            parseInt(x)
+                        );
+                        return `${s}px`;
+                    },
+                },
+            });
+        };
+        dispose_new(0);
+
+        /*--------------------
+        Wheel
+        --------------------*/
+        const handleMouseWheel_new = (e) => {
+            scrollY_new -= e.deltaY * 0.9;
+        };
+
+        /*--------------------
+        Touch
+        --------------------*/
+        let touchStart_new = 0;
+        let touchX_new = 0;
+        let isDragging_new = false;
+        const handleTouchStart_new = (e) => {
+            touchStart_new = e.clientX || e.touches[0].clientX;
+            isDragging_new = true;
+            $menu_new.classList.add("is-dragging");
+        };
+        const handleTouchMove_new = (e) => {
+            if (!isDragging_new) return;
+            touchX_new = e.clientX || e.touches[0].clientX;
+            scrollY_new += (touchX_new - touchStart_new) * 2.5;
+            touchStart_new = touchX_new;
+        };
+        const handleTouchEnd_new = () => {
+            isDragging_new = false;
+            $menu_new.classList.remove("is-dragging");
+        };
+
+        /*--------------------
+        Listeners
+        --------------------*/
+        $menu_new.addEventListener("mousewheel", handleMouseWheel_new);
+
+        $menu_new.addEventListener("touchstart", handleTouchStart_new);
+        $menu_new.addEventListener("touchmove", handleTouchMove_new);
+        $menu_new.addEventListener("touchend", handleTouchEnd_new);
+
+        $menu_new.addEventListener("mousedown", handleTouchStart_new);
+        $menu_new.addEventListener("mousemove", handleTouchMove_new);
+        $menu_new.addEventListener("mouseleave", handleTouchEnd_new);
+        $menu_new.addEventListener("mouseup", handleTouchEnd_new);
+
+        $menu_new.addEventListener("selectstart", () => {
+            return false;
+        });
+
+        /*--------------------
+        Resize
+        --------------------*/
+        window.addEventListener("resize", () => {
+            menuWidth_new = $menu_new.clientWidth;
+            itemWidth_new = $items_new[0].clientWidth;
+            wrapWidth_new = $items_new.length * itemWidth_new;
+        });
+
+        /*--------------------
+        Render
+        --------------------*/
+        const render_new = () => {
+            requestAnimationFrame(render_new);
+            y_new = lerp_new(y_new, scrollY_new, 0.1);
+            dispose_new(y_new);
+
+            scrollSpeed_new = y_new - oldScrollY_new;
+            oldScrollY_new = y_new;
+
+            gsap.to($items_new, {
+                skewX: -scrollSpeed_new * 0.2,
+                rotate: scrollSpeed_new * 0.01,
+                scale: 1 - Math.min(100, Math.abs(scrollSpeed_new)) * 0.003,
+            });
+        };
+        render_new();
+
+    </script>
+
+</body>
+
+</html>
