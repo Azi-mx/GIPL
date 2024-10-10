@@ -216,6 +216,11 @@ html {
   }
 }
 
+.last-galaxy {
+  margin-top: 30px !important;
+  margin-inline: 140px !important;
+}
+
 .flip5 {
   animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
