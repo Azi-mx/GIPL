@@ -252,8 +252,18 @@
         </a>
     </div>
 
-
-
+    <div class="modal fade" id="modal-subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/modal-group.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="section section2 section-hero">
             <div class="container">
@@ -1927,6 +1937,11 @@
     </script> -->
 
     <script>
+        $(window).ready(function () {
+            setTimeout(function () {
+                $('#modal-subscribe').modal("show")
+            }, 3000)
+        })
         // Function to rotate images for each logo
         function rotateImages() {
             const logos = document.querySelectorAll('.logo-image');
