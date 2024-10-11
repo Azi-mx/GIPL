@@ -6207,6 +6207,7 @@ fieldset:disabled .btn {
 }
 
 .modal-dialog {
+    height: 100%;
     position: relative;
     width: auto;
     margin: var(--bs-modal-margin);
@@ -6305,6 +6306,7 @@ fieldset:disabled .btn {
 }
 
 .modal-body {
+    align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
