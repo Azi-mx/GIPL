@@ -222,7 +222,7 @@ html {
 }
 
 .flip5 {
-  animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1) infinite;
 }
 
 .flip {
@@ -230,7 +230,7 @@ html {
   position: relative;
   height: 72px;
   padding-left: 0rem !important;
-  padding-top: 10px;
+  padding-top: 15px;
   display: inline-block;
 }
 
@@ -240,114 +240,6 @@ html {
   height: 45px;
   margin-bottom: 45px;
   display: block;
-}
-
-.animation {
-  display: inline-block;
-  height: 65px;
-  overflow: hidden;
-}
-
-.animation>div>div {
-  padding: 0.25rem 0.75rem;
-  height: 2.81rem;
-  margin-bottom: 3rem;
-  display: inline-block;
-}
-
-.animation div:first-child {
-  animation: text-animation 6s ease-in-out infinite;
-}
-
-@keyframes text-animation {
-  0% {
-    transform: translateY(0%);
-  }
-
-  30% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(-100%);
-  }
-
-  70% {
-    transform: translateY(-150%);
-  }
-
-  90% {
-    transform: translateY(-150%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-
-}
-
-.animation .second {
-  animation: text-animation2 6s ease-in-out infinite;
-}
-
-@keyframes text-animation2 {
-  0% {
-    transform: translateY(0%);
-  }
-
-  30% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(-60%);
-  }
-
-  70% {
-    transform: translateY(-60%);
-  }
-
-  90% {
-    transform: translateY(-150%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-
-}
-
-.animation .third {
-  animation: text-animation3 6s ease-in-out infinite;
-}
-
-@keyframes text-animation3 {
-  0% {
-    transform: translateY(0%);
-
-  }
-
-  30% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(0%);
-  }
-
-  70% {
-    transform: translateY(-80%);
-  }
-
-
-  90% {
-    transform: translateY(-160%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-
 }
 
 
