@@ -27,12 +27,18 @@
             background-color: var(--bs-backdrop-bg);
         }
 
-        .modal-content {
-
+        .modal-content-service {
+  
             background-color: white;
-            padding: 20px;
-            padding-bottom: 10px;
             width: 1000px;
+        }
+
+        .service-modal-body{
+
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+
         }
 
         .section-about .h {
@@ -358,14 +364,14 @@
                     <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
                         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content modal-content-service">
-                                <div class="modal-header service-modal-header">
-                                    <span class="modal-title fs-1 d-flex align-items-center" id="exampleModalToggleLabel">Inquiry Form</span>
+                            <div class="modal-content modal-content-service rounded-5">
+                                <div class="modal-header service-modal-header rounded-top-5 mb-3 py-4">
+                                    <span class="modal-title fs-1 d-flex align-items-center ps-4" id="exampleModalToggleLabel">Inquiry Form</span>
                                     <button type="button" class="btn-close fs-3 pe-5" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body d-flex">
-                                    <div class=" fs-2 col-6 gap-4 pe-5">
+                                <div class="modal-body service-modal-body d-flex flex-lg-row flex-column">
+                                    <div class=" fs-2 col-lg-6 col-12 gap-4 pe-5">
                                         <div class="input-group flex-nowrap pb-4">
                                             <span class="input-group-text fs-3" id="addon-wrapping">Name : </span>
                                             <input type="text" class="form-control fs-1" placeholder=""
@@ -381,14 +387,14 @@
                                             <input type="text" class="form-control fs-1" placeholder=""
                                                 aria-label="Username" aria-describedby="addon-wrapping">
                                         </div>
-                                        <div class="input-group flex-nowrap ">
+                                        <div class="input-group flex-nowrap pb-4">
                                             <span class="input-group-text fs-3" id="addon-wrapping">Address : </span>
                                             <input type="textarea" class="form-control fs-1" placeholder=""
                                                 aria-label="Username" aria-describedby="addon-wrapping">
                                         </div>
                                     </div>
 
-                                    <div class=" fs-2 col-6 gap-4">
+                                    <div class=" fs-2 col-lg-6 col-12 gap-4">
                                         <div class="input-group flex-nowrap  pb-4">
                                             <span class="input-group-text fs-3" id="addon-wrapping">Email : </span>
                                             <input type="text" class="form-control fs-1" placeholder=""
@@ -405,14 +411,14 @@
                                               Request for Demo
                                             </label>
                                           </div>
-                                        <div class="input-group flex-nowrap ">
+                                        <div class="input-group flex-nowrap pb-4">
                                             <span class="input-group-text fs-3" id="addon-wrapping">Remark : </span>
                                             <input type="text" class="form-control fs-1" placeholder=""
                                                 aria-label="Username" aria-describedby="addon-wrapping">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal-footer d-flex justify-content-center gap-4">
+                                <div class="modal-footer d-flex justify-content-center gap-4 py-4">
                                     <button type="button" class="btn btn-secondary fs-5 p-5 py-4" data-bs-dismiss="modal">Close</button>
                                     <button class="product-inquiry" data-bs-target="#exampleModalToggle"
                                         data-bs-toggle="modal">Send
