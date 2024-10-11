@@ -2607,6 +2607,7 @@ input[type=radio] {
 }
 
 .unique-sr-only {
+
   position: absolute !important;
   overflow: hidden;
   font-size: 25px;
@@ -2616,6 +2617,7 @@ input[type=radio] {
   margin: -1px;
   padding: 0;
   border: 0;
+
 }
 
 .unique-gallery-dot {
@@ -2690,6 +2692,7 @@ input[type=radio] {
 
   background-color: white;
   width: 1000px;
+
 }
 
 .service-modal-body{
@@ -2706,7 +2709,12 @@ input[type=radio] {
   font-weight: 500;
   line-height: 5.5rem;
   margin-bottom: 2.2rem;
+}
+
+.section-webdevelopment .h{
+  
   border-bottom: 5px solid #FFA30C;
+
 }
 
 .service-modal-header{
