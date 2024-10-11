@@ -1061,7 +1061,7 @@ ul li {
   display: flex;
   justify-content: center;
   margin: 0 2rem;
-  height: 190px;
+  height: 130px;
   width: 190px;
   position: relative;
 }
@@ -1084,8 +1084,12 @@ ul li {
   z-index: -1;
 }
 
+.product-box .text .h {
+  border: 0px !important;
+}
+
 .section-galaxy .galaxy-col-big {
-  height: 270px;
+  height: 215px;
   width: 270px;
   animation: small-big 1s ease infinite alternate;
 }
@@ -1247,9 +1251,6 @@ ul li {
   position: relative;
 }
 
-.section-youtube .playlist-card .thumb-img {
-  margin-bottom: 2rem;
-}
 
 .section-youtube .playlist-card .thumb-img iframe {
   width: 100%;
