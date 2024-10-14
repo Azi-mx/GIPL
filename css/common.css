@@ -2675,63 +2675,7 @@ input[type=radio] {
 
 /* Web Developement and HR-Management Page Started here */
 
-.modal-backdrop {
-  --bs-backdrop-zindex: 1050;
-  --bs-backdrop-bg: none;
-  --bs-backdrop-opacity: 0.5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--bs-backdrop-bg);
-}
 
-.modal-content-service {
-
-  background-color: white;
-  width: 1000px;
-
-}
-
-.service-modal-body{
-
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-
-}
-
-.section-about .h {
-  color: #3F4256;
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 5.5rem;
-  margin-bottom: 2.2rem;
-}
-
-.section-webdevelopment .h{
-  
-  border-bottom: 5px solid #FFA30C;
-
-}
-
-.service-modal-header{
-
-  background-color: #FFA30C;
-
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-      display: flex;
-      justify-content: center;
-      max-width: none;
-      margin-right: 0;
-      margin-left: 0;
-  }
-}
 
 /* Web Developement and HR-Management Page End here */
 
