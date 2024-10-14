@@ -221,6 +221,12 @@ function showImages() {
 
 showImages();
 
+// portfolio pagination slider started here
+
+
+
+// portfolio pagination slider end here
+
 // Portfolio end here
 
 // Vishal js end here
