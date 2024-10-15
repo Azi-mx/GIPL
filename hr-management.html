@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/common.css?v=08092024" />
     <link rel="stylesheet" href="css/homepage.css?v=08092024" />
     <link rel="stylesheet" href="css/newsletter-popup-styles.css">
+
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
 
@@ -255,8 +256,6 @@
         </a>
     </div>
 
-
-
     <section>
 
         <div class="section section3 section-about section-webdevelopment">
@@ -290,13 +289,12 @@
             </div>
         </div>
 
-        <!-- <div class="section section3 section-about"> -->
         <div class="container">
             <div class="row align-items-center">
 
                 <div class="d-flex justify-content-center col-12">
 
-                    <button class="product-inquiry col-3 d-flex justify-content-center"
+                    <button class="product-inquiry col-lg-3 col-5 d-flex justify-content-center"
                         data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inquire
                         Now
                         <svg width="30" height="8" viewBox="0 0 14 10" fill="#FFA30C"
@@ -337,7 +335,8 @@
                                         </div>
                                         <div class="input-group flex-nowrap pb-4">
                                             <span class="input-group-text fs-3" id="addon-wrapping">Address : </span>
-                                            <textarea class="form-control  fs-3" placeholder="" id="floatingTextarea" aria-describedby="addon-wrapping"></textarea>
+                                            <textarea class="form-control  fs-3" placeholder="" id="floatingTextarea"
+                                                aria-describedby="addon-wrapping"></textarea>
                                         </div>
                                     </div>
 
@@ -362,7 +361,8 @@
                                         </div>
                                         <div class="input-group flex-nowrap pb-4">
                                             <span class="input-group-text fs-3" id="addon-wrapping">Remark : </span>
-                                            <textarea class="form-control fs-3" placeholder="" id="floatingTextarea" aria-describedby="addon-wrapping"></textarea>
+                                            <textarea class="form-control fs-3" placeholder="" id="floatingTextarea"
+                                                aria-describedby="addon-wrapping"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -382,28 +382,6 @@
 
             </div>
         </div>
-        <!-- </div> -->
-
-
-
-        <!-- <div class="shape shape1">
-            <img src="images/shape-01.svg" alt="">
-        </div>
-        <div class="shape shape2">
-            <img src="images/shape-02.svg" alt="">
-        </div>
-        <div class="shape shape3">
-            <img src="images/shape-03.svg" alt="">
-        </div>
-        <div class="shape shape4">
-            <img src="images/shape-04.svg" alt="">
-        </div>
-        <div class="shape shape5">
-            <img src="images/shape-05.svg" alt="">
-        </div>
-        <div class="shape shape6">
-            <img src="images/shape-06.svg" alt="">
-        </div> -->
     </section>
 
     <footer class="footer">
@@ -602,6 +580,49 @@
         </div>
     </footer>
 
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/wow.js"></script>
+    <script src="js/lib/slick.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/wow-function.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+
+    <script>
+        wow = new WOW({
+            boxClass: "wow", // default
+            animateClass: "animate__animated", // default
+            offset: 120, // default
+            mobile: true, // default
+            live: true, // default
+        });
+        wow.init();
+    </script>
+
+    <script>
+        // Function to rotate images for each logo
+        function rotateImages() {
+            const logos = document.querySelectorAll('.logo-image');
+
+            logos.forEach(logo => {
+                const images = JSON.parse(logo.getAttribute('data-images'));
+                let currentImageIndex = 0;
+
+                // Change image every 2 seconds
+                setInterval(() => {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    logo.src = images[currentImageIndex];
+                }, 4000); // Adjust time interval (2000ms = 2 seconds)
+            });
+        }
+
+        // Call the rotateImages function when the page loads
+        window.onload = rotateImages;
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

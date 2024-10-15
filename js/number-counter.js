@@ -60,10 +60,10 @@ var commonNumber = {
 
         const statisticsContinents = document.getElementById('idContinents');
         observer.observe(statisticsContinents);
-    },    
+    },
 
     //Counters
-    numberCounters: function () {        
+    numberCounters: function () {
 
         const counters = document.querySelectorAll('.value');
         const speed = 400;
@@ -89,7 +89,6 @@ var commonNumber = {
     numberCounters1: function () {
         const counters = document.querySelectorAll('.value1');
         const speed = 400;
-
         counters.forEach(counter => {
             const animate = () => {
                 const value = +counter.getAttribute('akhi');
@@ -103,7 +102,6 @@ var commonNumber = {
                     counter.innerText = `${value.toLocaleString('en-US')}+`;
                 }
             }
-
             animate();
         });
     },
@@ -150,7 +148,7 @@ var commonNumber = {
 
             animate();
         });
-    }, 
+    },
 
 }
 
