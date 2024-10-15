@@ -1078,4 +1078,61 @@ section .shape6 {
 
 /* Web-Development Page End Here */
 
+
+/* Contact Page Started here */
+
+@media (max-width: 768px) {
+
+  .cont3-form-header {
+
+    font-size: 20px;
+
+  }
+
+  .cont-form-leftext {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #878787;
+  }
+
+  .cont3-form-select {
+
+    height: 30px;
+    font-size: 15px;
+    color: #878787;
+    border-radius: 13px;
+
+  }
+
+}
+
+@media (max-width: 568px) {
+
+  .cont3-form-header {
+
+    font-size: 20px;
+
+  }
+
+  .cont-form-leftext {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #878787;
+  }
+
+  .cont3-form-select {
+
+    height: 30px;
+    font-size: 10px;
+    color: #878787;
+    border-radius: 13px;
+
+  }
+
+}
+
+/* Contact Page end here */
+
 /* Vishal's CSS ends here */

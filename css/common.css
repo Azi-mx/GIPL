@@ -273,7 +273,7 @@ html {
 
 @media (max-width: 991px) {
   .section3 {
-    padding: 3rem 0;
+    padding: 6rem 0;
   }
 }
 
@@ -1984,58 +1984,6 @@ img.cont1-img {
 
 }
 
-@media (max-width: 768px) {
-
-  .cont3-form-header {
-
-    font-size: 20px;
-
-  }
-
-  .cont-form-leftext {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: #878787;
-  }
-
-  .cont3-form-select {
-
-    height: 30px;
-    font-size: 15px;
-    color: #878787;
-    border-radius: 13px;
-
-  }
-
-}
-
-@media (max-width: 568px) {
-
-  .cont3-form-header {
-
-    font-size: 20px;
-
-  }
-
-  .cont-form-leftext {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    color: #878787;
-  }
-
-  .cont3-form-select {
-
-    height: 30px;
-    font-size: 10px;
-    color: #878787;
-    border-radius: 13px;
-
-  }
-
-}
-
 .cont3-form-inputtext {
 
   color: #878787;
@@ -2725,12 +2673,6 @@ input[type=radio] {
 }
 
 /* Portfolio end here */
-
-/* Web Developement and HR-Management Page Started here */
-
-
-
-/* Web Developement and HR-Management Page End here */
 
 /* ---------------vishal's css end here ---------------------------*/
 
