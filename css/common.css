@@ -273,7 +273,7 @@ html {
 
 @media (max-width: 991px) {
   .section3 {
-    padding: 6rem 0;
+    padding: 3rem 0;
   }
 }
 
@@ -1951,12 +1951,6 @@ img.cont1-img {
 
 /* Content - 3 start */
 
-.content-3 {
-
-  margin-bottom: 110px;
-
-}
-
 .cont3-form {
 
   box-shadow: 0px 4px 19.5px 0px #0000001A;
@@ -1987,6 +1981,58 @@ img.cont1-img {
   font-size: 19px;
   color: #878787;
   border-radius: 13px;
+
+}
+
+@media (max-width: 768px) {
+
+  .cont3-form-header {
+
+    font-size: 20px;
+
+  }
+
+  .cont-form-leftext {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #878787;
+  }
+
+  .cont3-form-select {
+
+    height: 30px;
+    font-size: 15px;
+    color: #878787;
+    border-radius: 13px;
+
+  }
+
+}
+
+@media (max-width: 568px) {
+
+  .cont3-form-header {
+
+    font-size: 20px;
+
+  }
+
+  .cont-form-leftext {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #878787;
+  }
+
+  .cont3-form-select {
+
+    height: 30px;
+    font-size: 10px;
+    color: #878787;
+    border-radius: 13px;
+
+  }
 
 }
 
@@ -2080,17 +2126,6 @@ img.cont1-img {
 
 /* Gallery Page Started here */
 
-/* Content-1 started here */
-
-.content-1-p {
-
-  padding: 0 70px 0 70px;
-
-}
-
-/* Content-1 end here */
-
-
 /* Content-2 start here */
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
@@ -2108,6 +2143,14 @@ input[type=radio] {
   margin: auto;
   transition: transform 0.4s ease, opacity 0.4s ease;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .gallery-card {
+    height: 28%;
+  }
+
 }
 
 .gallery-cards {
@@ -2187,8 +2230,18 @@ input[type=radio] {
 
 .gallery-slider-div {
   height: 330px;
+  margin-top: 70px;
   text-align: center;
   position: relative;
+}
+
+@media (max-width : 768px) {
+
+  .gallery-slider-div {
+    height: 200px;
+  margin-top: 0px;
+  }
+
 }
 
 .gallery-card img {
@@ -2209,7 +2262,7 @@ input[type=radio] {
 .bg-gallery {
   position: absolute;
   right: 0;
-  background: linear-gradient(270deg, #FFFFFF 5.27%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(270deg, #5f1616 5.27%, rgba(255, 255, 255, 0) 100%);
   width: 30%;
   height: 100%;
   z-index: 993;
@@ -2696,6 +2749,8 @@ input[type=radio] {
   margin-top: 100px;
 }
 
+
+
 .footer ul {
 
   padding-left: 0;
@@ -2769,6 +2824,8 @@ input[type=radio] {
   margin-top: 2.5rem;
 }
 
+
+
 @media (max-width: 991px) {
   .footer .col-12 {
     margin: 2rem 0;
@@ -2777,6 +2834,22 @@ input[type=radio] {
   .footer-top {
     display: none;
   }
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .footer-main {
+    padding: 0 0;
+  }
+
+  .contact-first-row {
+    padding: 0 !important;
+  }
+
 }
 
 /*# sourceMappingURL=common.css.map */
