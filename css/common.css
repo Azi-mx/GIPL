@@ -2780,14 +2780,6 @@ input[type=radio] {
 
 @media (max-width: 768px) {
 
-  .footer {
-    margin-top: 0;
-  }
-
-  .footer-main {
-    padding: 0 0;
-  }
-
   .contact-first-row {
     padding: 0 !important;
   }
