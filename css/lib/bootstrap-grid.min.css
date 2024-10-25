@@ -6210,6 +6210,7 @@ fieldset:disabled .btn {
     height: 100%;
     position: relative;
     width: auto;
+    margin: var(--bs-modal-margin);
     pointer-events: none
 }
 
