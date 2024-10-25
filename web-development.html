@@ -13,9 +13,191 @@
     <link rel="stylesheet" href="css/newsletter-popup-styles.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
+    <style>
+        .detail-modal {
+            backdrop-filter: blur(19.799999237060547px);
+            background: #00000054;
+        }
+
+        .detail-inquire-btn {
+            background-color: #FFA30C;
+            color: #fff;
+            align-items: center;
+            border: 2px solid #FFA30C;
+            border-radius: 6px;
+            display: flex;
+            font-family: "Inter", sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 1.2rem 2rem;
+            min-width: 16rem;
+            justify-content: center;
+        }
+
+        .detail-inquire-btn:hover {
+            background-color: white;
+            color: #FFA30C;
+            transition: 0.2s;
+        }
+
+        .modal-content-service {
+            background-color: #fff;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            max-width: 100%;
+            width: 28vw;
+            /* Default width */
+            pointer-events: auto;
+            /* max-height: calc(100vh - 30px); */
+            /* Prevent overflow */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-modal-header {
+            background-color: #fff;
+            /* Set to white */
+            border-radius: 15px 15px 0 0;
+            text-align: left;
+        }
+
+        .service-modal-header img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .service-modal-body {
+            padding: 8px;
+            padding-top: 0px;
+            overflow-y: auto;
+            max-height: calc(100vh - 285px);
+            /* Adjust based on header/footer size */
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        .form-control {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        .form-control:focus {
+            border-color: #ffaf00;
+            box-shadow: none;
+        }
+
+        .fs-3 {
+            font-size: 1.25rem;
+        }
+
+        .fs-2 {
+            font-size: 1.5rem;
+        }
+
+        label {
+            font-size: 1.56rem;
+            font-weight: 500;
+        }
+
+        /* Add equal top and bottom spacing */
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 40px);
+            /* Adjust to ensure equal space at top and bottom */
+        }
+
+        /* Responsive styles */
+
+        @media (max-width: 1200px) {
+
+            .modal-content-service {
+                width: 50vw;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .modal-content-service {
+                width: 65vw;
+
+                padding: 10px;
+            }
+
+            .service-modal-body {
+                padding: 10px;
+                max-height: calc(100vh - 150px);
+
+            }
+
+            .detail-inquire-btn {
+                font-size: 1rem;
+            }
+
+            .fs-3 {
+                font-size: 1rem;
+            }
+
+            .fs-2 {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            
+
+            .modal-content-service {
+                width: 75vw;
+                margin: 0;
+            }
+
+            .modal-dialog-centered {
+                justify-content: center;
+            }
+
+            .form-control {
+                height: 23px;
+            }
+
+            .modal-header {
+                padding: 10px;
+            }
+
+            .service-modal-body {
+                padding: 5px;
+            }
+
+            .detail-inquire-btn {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+
+            label {
+                font-size: 1rem;
+            }
+
+            .fs-3 {
+                font-size: 0.875rem;
+            }
+
+            .fs-2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
+
+
 
     <header class="header">
         <div class="container">
@@ -290,98 +472,302 @@
             </div>
         </div>
 
+        <div class="section section3 section-process">
+            <div class="container">
+                <div class="title text-center">
+                    <small>OUR WORK PROCESS</small>
+                    <h2 class="h">Why Choose Us</h2>
+                </div>
+                <div class="row process-box">
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="card-icon">
+                                    <img src="images/icons/ic-select-project.svg" alt="" class="icon">
+                                    <img src="images/icons/ic-select-project-hover.svg" alt="" class="icon-hover">
+                                </div>
+                                <div class="card-info">
+                                    <h5 class="h">Select Project</h5>
+                                    <p>Continually engage customized
+                                        infomediarie and quality growth
+                                        strategies. Appropriately.</p>
+                                </div>
+                            </div>
+                            <div class="card-number d-flex justify-content-center align-items-center">
+                                <span>01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="card-icon">
+                                    <img src="images/icons/ic-project-ana.svg" alt="" class="icon">
+                                    <img src="images/icons/ic-project-ana-hover.svg" alt="" class="icon-hover">
+                                </div>
+                                <div class="card-info">
+                                    <h5 class="h">Project Analysis</h5>
+                                    <p>Continually engage customized
+                                        infomediarie and quality growth
+                                        strategies. Appropriately.</p>
+                                </div>
+                            </div>
+                            <div class="card-number d-flex justify-content-center align-items-center">
+                                <span>02</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="card-icon">
+                                    <img src="images/icons/ic-plan-execute.svg" alt="" class="icon">
+                                    <img src="images/icons/ic-plan-execute-hover.svg" alt="" class="icon-hover">
+                                </div>
+                                <div class="card-info">
+                                    <h5 class="h">Plan Execute</h5>
+                                    <p>Continually engage customized
+                                        infomediarie and quality growth
+                                        strategies. Appropriately.</p>
+                                </div>
+                            </div>
+                            <div class="card-number d-flex justify-content-center align-items-center">
+                                <span>03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="card-icon">
+                                    <img src="images/icons/ic-deliver.svg" alt="" class="icon">
+                                    <img src="images/icons/ic-deliver-hover.svg" alt="" class="icon-hover">
+                                </div>
+                                <div class="card-info">
+                                    <h5 class="h">Deliver Result</h5>
+                                    <p>Continually engage customized
+                                        infomediarie and quality growth
+                                        strategies. Appropriately.</p>
+                                </div>
+                            </div>
+                            <div class="card-number d-flex justify-content-center align-items-center">
+                                <span>04</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row align-items-center">
 
                 <div class="d-flex justify-content-center col-12">
-                    <button class="product-inquiry col-lg-3 col-5 d-flex justify-content-center"
-                        data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inquire
-                        Now
-                        <svg width="30" height="8" viewBox="0 0 14 10" fill="#FFA30C"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.7188 5.59896L8.71875 9.76562C8.51042 9.92188 8.27083 10 8 10C7.72917 10 7.48958 9.92188 7.28125 9.76562C7.09375 9.59201 7 9.39236 7 9.16667C7 8.94097 7.09375 8.74132 7.28125 8.56771L10.5938 5.83333H1C0.708333 5.83333 0.46875 5.75521 0.28125 5.59896C0.09375 5.44271 0 5.24306 0 5C0 4.75694 0.09375 4.55729 0.28125 4.40104C0.46875 4.24479 0.708333 4.16667 1 4.16667H10.5938L7.28125 1.43229C7.09375 1.25868 7 1.05903 7 0.833334C7 0.607639 7.09375 0.407987 7.28125 0.234375C7.48958 0.078125 7.72917 0 8 0C8.27083 0 8.51042 0.078125 8.71875 0.234375L13.7188 4.40104C13.9062 4.57465 14 4.77431 14 5C14 5.22569 13.9062 5.42535 13.7188 5.59896Z"
-                                fill="#FFA30C" />
-                        </svg>
+                    <button class="detail-inquire-btn col-lg-2 fs-2 col-5 d-flex justify-content-center"
+                        data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inquire Now
                     </button>
 
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    <div class="modal fade detail-modal" id="exampleModalToggle" aria-hidden="true"
                         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content-service">
-                                <div class="modal-header service-modal-header rounded-top-5 mb-3 py-4">
-                                    <span class="modal-title fs-1 d-flex align-items-center ps-4"
-                                        id="exampleModalToggleLabel">Inquiry Form</span>
-                                    <button type="button" class="btn-close fs-3 pe-5" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body service-modal-body d-flex flex-lg-row flex-column">
-                                    <div class=" fs-2 col-lg-6 col-12 gap-5 pe-5">
-                                        <div class="input-group flex-nowrap pb-4">
-                                            <span class="input-group-text fs-3" id="addon-wrapping">Name : </span>
-                                            <input type="text" class="form-control p-3 fs-3" placeholder="">
+                                <form id="inquiryForm" class="needs-validation" novalidate>
+                                    <div
+                                        class="modal-header service-modal-header d-flex flex-column rounded-top-5 mb-3 py-4">
+                                        <div class="col-12 d-flex">
+                                            <div class="modal-title col-lg-fs-2 fs-4 fw-medium d-flex flex-column"
+                                                id="exampleModalToggleLabel">
+                                                <div>
+                                                    <img src="./images/Detail Page/Custom Icon.png" alt="Inquiry Icon">
+                                                </div>
+                                                <div>Inquiry Form</div>
+                                            </div>
+                                            <button type="button" class="btn-close fs-3 pe-5 pt-4"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="input-group flex-nowrap pb-4">
-                                            <span class="input-group-text fs-3 p-2" id="addon-wrapping">Contact No :
-                                            </span>
-                                            <input type="text" class="form-control p-3 fs-3" placeholder=""
-                                                aria-label="Username" aria-describedby="addon-wrapping">
-                                        </div>
-                                        <div class="input-group flex-nowrap pb-4">
-                                            <span class="input-group-text fs-3" id="addon-wrapping">Company Website :
-                                            </span>
-                                            <input type="text" class="form-control p-3 fs-3" placeholder=""
-                                                aria-label="Username" aria-describedby="addon-wrapping">
-                                        </div>
-                                        <div class="input-group flex-nowrap pb-4">
-                                            <span class="input-group-text fs-3" id="addon-wrapping">Address : </span>
-                                            <textarea class="form-control  fs-3" placeholder="" id="floatingTextarea"
-                                                aria-describedby="addon-wrapping"></textarea>
+                                        <div class="col-12 col-lg-fs-4 fs-5 tracking-tighter">
+                                            We’re here to help you transform your digital presence with innovative,
+                                            secure, and user-friendly web solutions.
                                         </div>
                                     </div>
 
-                                    <div class=" fs-2 col-lg-6 col-12 gap-4">
-                                        <div class="input-group flex-nowrap  pb-4">
-                                            <span class="input-group-text fs-3" id="addon-wrapping">Email : </span>
-                                            <input type="text" class="form-control p-3 fs-3" placeholder=""
-                                                aria-label="Username" aria-describedby="addon-wrapping">
+                                    <div class="modal-body service-modal-body">
+                                        <div class="fs-2 col-12">
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Your Name*</label>
+                                                <input type="text" class="form-control col-lg-fs-4 fs-5" id="name"
+                                                    placeholder="Enter your name" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email Address*</label>
+                                                <input type="email" class="form-control col-lg-fs-4 fs-5" id="email"
+                                                    placeholder="Enter your email" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="contact" class="form-label">Contact*</label>
+                                                <input type="number" class="form-control col-lg-fs-4 fs-5" id="contact"
+                                                    placeholder="Enter your contact number" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="company" class="form-label">Company Name*</label>
+                                                <input type="text" class="form-control col-lg-fs-4 fs-5" id="company"
+                                                    placeholder="Enter company name" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Address*</label>
+                                                <input type="text" class="form-control col-lg-fs-4 fs-5" id="address"
+                                                    placeholder="Enter address" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="remarks" class="form-label">Remarks*</label>
+                                                <input type="text" class="form-control col-lg-fs-4 fs-5" id="remarks"
+                                                    placeholder="Enter your remarks" required>
+                                            </div>
+
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="requestDemo">
+                                                <label class="form-check-label fs-3" for="requestDemo">Request for
+                                                    Demo</label>
+                                            </div>
                                         </div>
-                                        <div class="input-group flex-nowrap pb-5 ">
-                                            <span class="input-group-text fs-3" id="addon-wrapping">Company Name :
+                                    </div>
+
+                                    <div class="modal-footer modal-footer-detail d-flex justify-content-center gap-4">
+                                        <input type="submit" class="detail-inquire-btn col-12 fs-3"
+                                            value="Send Inquiry">
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+
+                            <style>
+
+                            </style>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content-service">
+                                <div
+                                    class="modal-header service-modal-header d-flex flex-column rounded-top-5 mb-3 py-4">
+                                    <div class="col-12 d-flex">
+                                        <div class="modal-title fs-2 fw-medium d-flex flex-column" id="exampleModalToggleLabel">
+                                            <div>
+                                                <img src="./images/Detail Page/Custom Icon.png" alt="">
+                                            </div>
+                                            <div>Inquiry Form</div>
+                                        </div>
+                                        <button type="button" class="btn-close fs-3 pe-5 pt-4" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                        </button>
+                                    </div>
+                                    <div class="col-12 fs-4 tracking-tighter">
+                                        We’re here to help you transform your digital presence with innovative, secure, and user-friendly web solutions. 
+                                    </div>
+                                </div>
+                                <div class="modal-body service-modal-body d-flex flex-lg-row flex-column">
+                                    <div class=" fs-2 col-12 ">
+                                        <div class="input-group flex-nowrap pb-4">
+                                            <span class="input-group-text fs-3" id="addon-wrapping">Name :
+                                            </span>
+                                            <input type="text" class="form-control p-1 fs-5" id="exampleInputEmail1" placeholder="fghjk" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="input-group flex-nowrap pb-4">
+                                            <span class="input-group-text fs-3 p-2" id="addon-wrapping">Contact
+                                                No :
                                             </span>
                                             <input type="text" class="form-control p-3 fs-3" placeholder=""
                                                 aria-label="Username" aria-describedby="addon-wrapping">
                                         </div>
-                                        <div class="form-check  pb-4">
+                                        <div class="input-group flex-nowrap pb-4">
+                                            <span class="input-group-text fs-3" id="addon-wrapping">Company
+                                                Website
+                                                :
+                                            </span>
+                                            <input type="text" class="form-control p-3 fs-3" placeholder=""
+                                                aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>
+                                        <div class="input-group flex-nowrap pb-4">
+                                            <span class="input-group-text fs-3" id="addon-wrapping">Address :
+                                            </span>
+                                            <textarea class="form-control fs-3" placeholder="" id="floatingTextarea"
+                                                aria-describedby="addon-wrapping"></textarea>
+                                        </div>
+                                        <div class="input-group flex-nowrap  pb-4">
+                                            <span class="input-group-text fs-3" id="addon-wrapping">Email :
+                                            </span>
+                                            <input type="text" class="form-control p-3 fs-3" placeholder=""
+                                                aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>
+                                        <div class="input-group flex-nowrap pb-4 ">
+                                            <span class="input-group-text fs-3" id="addon-wrapping">Company Name
+                                                :
+                                            </span>
+                                            <input type="text" class="form-control p-3 fs-3" placeholder=""
+                                                aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>
+                                        <div class="input-group flex-nowrap pb-4">
+                                            <span class="input-group-text fs-3" id="addon-wrapping">Remarks :
+                                            </span>
+                                            <textarea class="form-control fs-3" placeholder="" id="floatingTextarea"
+                                                aria-describedby="addon-wrapping"></textarea>
+                                        </div>
+
+                                        <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="flexCheckDefault">
                                             <label class="form-check-label fs-3" for="flexCheckDefault">
                                                 Request for Demo
                                             </label>
                                         </div>
-                                        <div class="input-group flex-nowrap pb-4">
-                                            <span class="input-group-text fs-3" id="addon-wrapping">Remark : </span>
-                                            <textarea class="form-control fs-3" placeholder="" id="floatingTextarea"
-                                                aria-describedby="addon-wrapping"></textarea>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="modal-footer d-flex justify-content-center gap-4 py-4">
-                                    <button type="button" class="btn btn-secondary fs-5 p-5 py-4"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button class="product-inquiry" data-bs-target="#exampleModalToggle"
+                                <div class="modal-footer modal-footer-deital d-flex justify-content-center gap-4 py-4">
+                                    <button class="detail-inquire-btn col-12 fs-3" data-bs-target="#exampleModalToggle"
                                         data-bs-toggle="modal">Send
                                         Inquiry
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
             </div>
+
         </div>
+
+        <div class="section section3 section-process">
+            <div class="container">
+                <div class="title text-center">
+                    <small>OUR WORK PROCESS</small>
+                    <h2 class="h">Why Choose Us</h2>
+                </div>
+            </div>
+        </div>
+
+        
+
+
     </section>
 
     <footer class="footer">
@@ -627,6 +1013,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+
+    <script>
+        // Example of Bootstrap validation script
+        (function () {
+            'use strict';
+            var form = document.querySelector('#inquiryForm');
+
+            // Add Bootstrap validation styles to the form on submit
+            form.addEventListener('submit', function (event) {
+                // Prevent form submission if invalid
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                // Add Bootstrap class 'was-validated' to show the validation styles
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
 
 </body>
 

@@ -1011,21 +1011,41 @@ section .shape6 {
 
 /* Web-Development Page Started Here */
 
-.modal-content-service {
+/* .modal-content-service {
 
   background-color: white;
-  width: 1202px;
+  width: 530px;
+  padding: 18px;
   position: relative;
   border-radius: 21px;
   pointer-events: auto;
 
-}
+} */
 
-.service-modal-body {
+/* .service-modal-body {
 
   padding: 30px;
+  padding-top: 0px;
 
-}
+} */
+
+/* .modal-footer-deital{
+
+  padding: 30px;
+  margin-bottom: 14px;
+
+} */
+
+.service-modal-header {
+
+  padding-left: 0;
+  padding-right: 0;
+ 
+ }
+
+ .service-modal-header img {
+    height: 65px;
+ }
 
 .section-about .h {
   color: #3F4256;
@@ -1050,15 +1070,12 @@ section .shape6 {
   left: 0;
   z-index: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100vh;  
   background-color: var(--bs-backdrop-bg);
 }
 
-.service-modal-header {
 
-  background-color: #FFA30C;
-
-}
+ 
 
 .modal-dialog {
 

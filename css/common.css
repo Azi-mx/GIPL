@@ -713,6 +713,14 @@ ul li {
   z-index: -1;
 }
 
+.our-product-1{
+  padding-bottom: 1rem;
+}
+
+.our-product-2{
+  padding: 0rem;
+}
+
 .section-process .process-box .line {
   background-color: #FFA30C;
   margin-top: 8rem;
