@@ -1074,15 +1074,6 @@ section .shape6 {
   background-color: var(--bs-backdrop-bg);
 }
 
-
- 
-
-.modal-dialog {
-
-  height: fit-content;
-
-}
-
 @media (min-width: 576px) {
   .modal-dialog {
       display: flex;
